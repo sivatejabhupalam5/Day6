@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tfl Store</title>
+       
+       
+        <link rel="stylesheet" href="../styles/loginpage.css">
+    </head>
+<body ng-app="authModule" ng-controller="authController">
+    
+    <nav style="position: absolute; top: 0; left: 0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="Getusers.html">Users</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div>
+    <div class="container">
+        <form name="loginForm" ng-submit="onValidate()"> 
+        <table>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" id="emailid" name="email" ng-model="user.emailid" required/></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password" id="password" ng-model="user.password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span id="validation-message" class="validation-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button type="submit" id="btnlogin">Login</button>
+                </td>
+            </tr>
+        </table>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
