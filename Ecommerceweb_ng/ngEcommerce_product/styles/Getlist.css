@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-image: url('../imagetemplates/Loginbackground.jpg');
     background-size: cover;
@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     color: #333;
-}
+} */
 
 .product-list {
     display: grid;
